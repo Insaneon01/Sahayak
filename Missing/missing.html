@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Missing Person</title>
+    <link rel="stylesheet" href="./missing.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <header class="navbar">
+        
+      <div class="logo-container">
+        <img src="../logo.jpeg" alt="Logo" class="logo" />
+        <h1>Sahayak</h1>
+      </div>
+        <h1>Report Missing Person</h1>
+    </header>
+
+    <section class="form-container">
+        <h2>Missing Person Details</h2>
+        <form action="/submit-missing-person" method="POST">
+            <div class="form-group">
+                <label for="name">Missing Person Name:</label>
+                <input type="text" id="name" name="missingPersonName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="height">Height (in cm):</label>
+                <input type="number" id="height" name="height" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bodyDescription">Body Description:</label>
+                <textarea id="bodyDescription" name="bodyDescription" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastSeen">Last Seen Location:</label>
+                <input type="text" id="lastSeen" name="lastSeenLocation" required>
+            </div>
+
+            <div class="form-group">
+                <label for="applicantName">Applicant's Name:</label>
+                <input type="text" id="applicantName" name="applicantName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="applicantContact">Applicant's Contact Number:</label>
+                <input type="tel" id="applicantContact" name="applicantContact" required>
+            </div>
+            <div class="form-group">
+                <label for="image">Upload Missing Person's Photo:</label>
+                <input class="image-upload" type="file" id="image" name="missingPersonPhoto" accept="image/*" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Report</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sahayak Police Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

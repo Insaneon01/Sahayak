@@ -1,0 +1,223 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 70%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee2e6;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    /* top: 20px; */
+    left: 20px;
+  }
+  header
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003049;
+    color: white;
+    /* padding: 20px; */
+    height: 8vh;
+    position: relative;
+  }
+  #h1{
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .logo { 
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .form-group a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .user-login{
+    font-weight: 500;
+    font-size: medium;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background-color: #f7f8f9;
+  }
+  
+  #startCamera, button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #startCamera:hover, button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the video overlay */
+  #videoOverlay {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    /* max-width: 500px; */
+    height: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    /* z-index: 1000; */
+    display: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  #buttonss{
+    position: fixed;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    max-width: 500px;
+    height: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  #video {
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 6px;
+  }
+  
+  #capturedImage {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 6px;
+  }
+  
+  #closeOverlay, #captureOrReset, #reset, #select, #save {
+    /* margin-top: 15px; */
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+  }
+  
+  #captureOrReset {
+    background-color: #28a745;
+  }
+  
+  #captureOrReset:hover {
+    background-color: #218838;
+  }
+  
+  #reset {
+    background-color: #ffc107;
+    display: none;
+  }
+  
+  #reset:hover {
+    background-color: #e0a800;
+  }
+  
+  #select {
+    background-color: #007bff;
+    display: none;
+  }
+  
+  #select:hover {
+    background-color: #0056b3;
+  }
+  
+  #save {
+    background-color: #17a2b8;
+    display: none;
+  }
+  
+  #save:hover {
+    background-color: #138496;
+  }
+  
+  #closeOverlay {
+    background-color: #dc3545;
+  }
+  
+  #closeOverlay:hover {
+    background-color: #c82333;
+  }
+  
+  /* Styling for the form inputs */
+  input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  footer p{
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 0;
+  }
+  

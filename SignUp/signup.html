@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="signup.css">
+  <title>Sign Up Dashboard</title>
+
+</head>
+<body>
+  <header >
+    <div class="logo-container">
+      <img src="../logo.jpeg" alt="Logo" class="logo" />
+      <h1 id="h1">Sahayak</h1>
+    </div>
+  </header>
+  <div class="container"> 
+    <h1>Sign Up</h1>
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="button" id="startCamera">Click Picture</button>
+      </div>
+      <!-- Additional Submit Button for Form -->
+      <div class="form-group">
+        <button type="submit"><a href="../main/updatedhome.html">Sign Up</a></button>
+      </div>
+      <div class="user-login">Already a user? <a href="../Login/login.html">Login</a></div>
+    </form> 
+  </div>
+
+  <!-- Overlay container for the video stream -->
+  <div id="videoOverlay">
+    <!-- Video feed for live stream -->
+    <video id="video" autoplay></video>
+
+    <!-- Image to display the captured photo -->
+    <img id="capturedImage" alt="Captured Image">
+<div id="buttonss">
+    <!-- Buttons -->
+    <button id="captureOrReset">Capture Photo</button>
+    <button id="reset">Reset</button>
+    <button id="select">Select Photo</button>
+    <button id="save">Save Photo</button>
+    <button id="closeOverlay">Close</button>
+</div>
+</div>
+
+  <!-- Canvas to hold captured photo temporarily -->
+  <canvas id="canvas" width="300" height="225"></canvas>
+  <footer class="bg-primary-foreground text-primary p-6 mt-auto">
+    <p>&copy; 2024 Sahayak Police Portal. All rights reserved.</p>
+  </footer>
+<script src="signup.js"></script>
+</body>
+</html>

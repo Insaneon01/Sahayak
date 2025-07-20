@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Police Dashboard</title>
+  <link rel="stylesheet" href="police.css">
+</head>
+<body>
+  <header >
+    <div class="logo-container">
+      <img src="../logo.jpeg" alt="Logo" class="logo" />
+      <h1>Sahayak</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">View Reports</a></li>
+        <li><a href="#">Search Cases</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#">Dashboard Overview</a></li>
+        <li><a href="#">New Reports</a></li>
+        <li><a href="#">Search Cases</a></li>
+        <li><a href="#">Verified Matches</a></li>
+        <li><a href="#">Flagged Reports</a></li>
+        <li><a href="#">Contact Families</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <section class="welcome">
+        <h1>Welcome to the Police Dashboard</h1>
+        <p>Here, you can view and manage reports, search cases, and take necessary actions.</p>
+      </section>
+
+      <section class="stats">
+        <div class="stat-item">Total Missing Persons: 120</div>
+        <div class="stat-item">Active Cases: 75</div>
+        <div class="stat-item">Found Person Reports: 45</div>
+        <div class="stat-item">Verified Matches: 10</div>
+        <div class="stat-item">Flagged Reports: 5</div>
+      </section>
+
+      <section class="recent-activity">
+        <h2>Recent Activity</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Report ID</th>
+              <th>Found Person Details</th>
+              <th>Date Reported</th>
+              <th>Match Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1234</td>
+              <td>Male, Age 35, Found near City Center</td>
+              <td>2024-08-25</td>
+              <td>No Match</td>
+              <td><button>View</button> <button>Flag</button></td>
+            </tr>
+            <!-- More Rows -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Police Dashboard | Privacy Policy | Terms of Service</p>
+  </footer>
+</body>
+</html>
+    
